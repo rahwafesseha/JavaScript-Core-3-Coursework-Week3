@@ -70,3 +70,44 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+//write a program that will take the `hogwarts` array as input and 
+//display the names of the people who belong to the Gryffindor house.
+
+function peopleInGryffindor(hogwarts) {
+  for (let person in hogwarts)
+  {
+  
+ let { firstName, lastName, house } = hogwarts[person];
+    if (house === "Gryffindor") {
+      console.log(
+        `Hello, my name is ${firstName} ${lastName}.`
+      );
+    }
+  }
+  };
+
+  peopleInGryffindor(hogwarts);
+
+ //write a program that will take the `hogwarts` array as input and  
+//display the names of teachers who have pets. 
+
+function teacherWithPet(hogwarts) {
+  for (let person in hogwarts)
+  {
+  
+ let { firstName, lastName, pet ,occupation } = hogwarts[person];
+    if (occupation==="Teacher" && pet != null) {
+      console.log(`Hello, my name is ${firstName} ${lastName}.`);
+    }
+  }
+  };
+
+  teacherWithPet(hogwarts);
+
+ 
+        
+
+
+ 
+    
